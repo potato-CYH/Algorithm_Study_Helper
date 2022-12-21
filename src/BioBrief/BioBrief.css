@@ -1,0 +1,30 @@
+.bioframe {
+    height: 10vh;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.welcomeMsg {
+    height: 4vh;
+    margin: auto 1vh auto auto;
+
+    text-align: center;
+    font-family: system-ui;
+    font-weight: 600;
+    font-size: 3vh;
+}
+.goMyPage {
+    height: 4vh;
+    margin: auto auto auto 0vh;
+    padding: 0px 4vw;
+    line-height: 4vh;
+
+    background-color: #FFEB84;
+    border: solid #BAAB5A;
+    
+    font-family: system-ui;
+    text-align: center;
+    font-size: 2vh;
+}

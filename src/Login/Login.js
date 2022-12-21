@@ -24,7 +24,7 @@ function Login() {
             }
             else {
                 //세션 스토리지에 data json 저장
-                sessionStorage.setItem('usrInfo', data)
+                sessionStorage.setItem('usrInfo', JSON.stringify(data.items[0]))
                 // authorized : true
                 window.location.replace("/main")
             }

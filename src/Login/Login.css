@@ -1,0 +1,45 @@
+.formStyle {
+    height: 13vh;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    
+    min-height: 100vh;
+}
+
+.textBox {
+    width: 80vw;
+    height: 6vh;
+    background-color: #e5e5e5;
+    border: solid #EDFF7B;
+    
+    margin: auto auto 2vh auto;
+    
+    font-family: system-ui;
+    font-size: 4vh;
+
+    text-indent: 10px;
+}
+
+.loginBtn {
+    width: 40vw;
+    height: 6vh;
+    background: #CFFF48;
+   
+    
+    font-family: inherit;
+    font-size: 4vh;
+    text-align: center;
+    font-weight: 500;
+    color: #006416;
+}
+
+.errMsg {
+    margin: 3vh auto auto auto;
+    padding: 0 5% 0 5%;
+    
+    font-family: interit;
+    font-size: 91%;
+}

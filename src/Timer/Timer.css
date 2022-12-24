@@ -1,0 +1,43 @@
+
+.startBtn{
+    width: 33vmax;
+    height: 8vh;
+    text-align: center;
+    font-family: system-ui;
+    font-size: 4vh;
+    background-color: #B9FFD5;
+    line-height: 8vh;
+    font-weight: bold;
+    margin: 4vh 0 2vh 0;
+    color: #006927;
+}
+.time{
+    font-family: system-ui;
+    font-weight: bolder;
+    font-size: 7vh;
+    /* margin: 2vh 0 2vh 0; */
+}
+.stopBtn{
+    width: 33vmax;
+    height: 8vh;
+    text-align: center;
+    font-family: system-ui;
+    font-size: 4vh;
+    background-color: #D8FFB9;
+    line-height: 8vh;
+    font-weight: bold;
+    margin: 2vh 0 2vh 0;
+    color: #006927;
+}
+.submitBtn{
+    width: 33vmax;
+    height: 5vh;
+    text-align: center;
+    font-family: system-ui;
+    font-size: 3vh;
+    background-color: #E8ED00;
+    line-height: 5vh;
+    font-weight: bold;
+    margin: 2vh 0 2vh 0;
+    border: solid 5px #000000;
+}

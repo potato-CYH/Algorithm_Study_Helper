@@ -1,0 +1,98 @@
+.getBtn{
+    width: 33vmax;
+    height: 5vh;
+    text-align: center;
+    font-family: system-ui;
+    font-size: 3vh;
+    background-color: #B9FFD5;
+    line-height: 5vh;
+    font-weight: bold;
+    margin: 3vh 0 2vh 0;
+}
+.listStyle{
+    list-style: none;
+    padding-left: 0px;
+}
+
+.listfield{
+    width: 42vmax;
+    font-weight: 100;
+    color: #000000;
+    padding:4px 0 0 0;
+    display: flex;
+    text-align: center;
+    
+}
+
+.field{
+    width: 42vmax;
+    height:3.5vh;
+    display: flex;
+    font-family: system-ui;
+    font-size: 2vh;
+    text-align: center;
+    font-weight: bold;
+    color: #0a4404;
+    background-color: #e8efde;
+    line-height:3.5vh
+}
+.field1{
+    width: 8vmax;
+    border-left: solid 1px lightgray;
+    border-right: solid 1px lightgray;
+    font-weight:bold;
+}
+.field2{
+    width: 6vmax;
+    border-right: solid 1px lightgray;
+}
+.field3{
+    width: 21vmax;
+    border-right: solid 1px lightgray;
+}
+.new-align{
+    text-align:left;
+    text-indent:3vw;
+}
+.field4{
+    width: 7vmax;
+    border-right: solid 1px lightgray;
+
+}
+.row{
+    width: 42vmax;
+    display: flex;
+
+}
+.attr1{
+    width: 9.5vh;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.attr2{
+    width: 9.5vh;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.attr3{
+    width: 9.5vh;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.attr4{
+    width: 9.5vh;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.solved{
+    color:green;
+    font-weight:bold;
+}

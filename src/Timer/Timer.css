@@ -30,13 +30,13 @@
     color: #006927;
 }
 .submitBtn{
-    width: 33vmax;
-    height: 5vh;
+        width: 33vmax;
+    /* height: 5vh; */
     text-align: center;
     font-family: system-ui;
     font-size: 3vh;
     background-color: #E8ED00;
-    line-height: 5vh;
+    /* line-height: 5vh; */
     font-weight: bold;
     margin: 2vh 0 2vh 0;
     border: solid 5px #000000;

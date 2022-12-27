@@ -1,0 +1,9 @@
+.info-frame{
+    /* min-height: 20vh; */
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin: 5vh 0 5vh 0;
+    /* width: auto; */
+    justify-content: space-evenly;
+}

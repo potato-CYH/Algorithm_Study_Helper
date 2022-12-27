@@ -37,7 +37,7 @@
     line-height:3.5vh
 }
 .field1{
-    width: 8vmax;
+    width: 9vmax;
     border-left: solid 1px lightgray;
     border-right: solid 1px lightgray;
     font-weight:bold;
@@ -55,7 +55,7 @@
     text-indent:3vw;
 }
 .field4{
-    width: 7vmax;
+    width: 6vmax;
     border-right: solid 1px lightgray;
 
 }

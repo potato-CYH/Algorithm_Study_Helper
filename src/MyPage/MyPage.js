@@ -1,8 +1,17 @@
+import BioInfo from './BioInfo/BioInfo'
+import MyInfo from './MyInfo/MyInfo'
 import '../MyPage/MyPage.css';
 
 function MyPage() {
+
   return (
-      <span>mypage</span>
+    <div>
+
+      <div className="info-frame">
+        <BioInfo></BioInfo>
+      </div>
+      <MyInfo></MyInfo>
+    </div>
   );
 }
 

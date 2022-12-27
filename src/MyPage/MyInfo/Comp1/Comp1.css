@@ -1,0 +1,43 @@
+.comp1-frame{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.dropdown-style{
+    width:15vw;
+    margin:2vh 0 2vh 0;
+}
+
+.ul-style{
+        list-style: none;
+    padding-left: 0px;
+}
+
+.sublist-frame{
+    width: 35vmax;
+    font-size: 1.5vh;
+    font-weight: bold;
+    display: flex;
+    font-family: system-ui;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.list-tier-img{
+    width:1.3vmax;
+    margin-left:0.5vh;
+
+}
+
+.sublist-lv{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.sublist-id{
+    display: flex;
+    width: 13vmax;
+    flex-direction: row;
+    justify-content: space-between;
+}

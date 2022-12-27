@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import axios from 'axios'
 import * as config from '../config'
+import { useNavigate } from 'react-router-dom';
 
 import "../commonCss.css"
 import "../Timer/Timer.css";
@@ -17,11 +18,13 @@ function calcTime(num) {
 
 function convertTimeformat(obj){
     const arr=[obj.getFullYear(),obj.getMonth()+1,obj.getDate(),obj.getHours(),obj.getMinutes(),obj.getSeconds()]
-
+    
     return `${arr[0]}-${arr[1]}-${arr[2]} ${arr[3]}:${arr[4]}:${arr[5]}`
 }
 
 function Timer() {
+    let navigate = useNavigate();
+
     const [recordedTime, setRecordedTime] = useState([0, 0, 0])
     const [pid, setPid] = useState(0);
 
@@ -48,15 +51,19 @@ function Timer() {
         
         const problemId = pid;
         
-        axios.post(`${config.apiurl}/user/submissions/`,
+        axios.post(`${config.apiurl}/${userid}/submissions/`,
             {
-                user_id: userid,
                 problem_id: problemId,
                 time_start: convertTimeformat(startTime),
                 time_accepted: convertTimeformat(stopTime)
             })
             .then(function (response) {
-                alert('풀이 시간이 서버로 전송되었습니다.');
+                const data = response.data;
+                if(data.status===200){
+                    alert('풀이 시간이 서버로 전송되었습니다.');
+                }else{
+                    alert('풀이 시간의 서버 전송이 실패하였습니다. 다시 시도해 주십시오.')
+                }
             })
             .catch(function (error) {
                 alert('다음과 같은 에러가 발생하였습니다.   '+error.toString());
@@ -65,7 +72,10 @@ function Timer() {
     }
     return (
         <div className="commonFrame">
-            <div className="title">문제 풀기</div>
+            <div className = "title-frame">
+            <span className="title">문제 풀기</span>
+            <div onClick={()=>navigate('/main')} className='go-mainpage'>메인페이지로</div>
+            </div>
             <div className="setting">
                 <div className="setSpace">
                     <span className="setTitle">문제 번호 : </span>

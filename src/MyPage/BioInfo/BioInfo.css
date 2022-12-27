@@ -1,0 +1,53 @@
+.bioInfo{
+       width: 40vh;
+    /* background-color: yellow; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+.tierimg{
+    width: 100%;
+    height:auto;
+    display:block;
+}
+.info{
+    display: flex;
+    font-family: system-ui;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-left: 2vh;
+}
+.usrname-style{
+        /* font-family: system-ui; */
+        font-size: 3vh;
+        padding-bottom: 0.5vh;
+        font-weight: bold;
+}
+.tier-style{
+    font-size: 2vh;
+    padding-top: 0.5vh;
+    font-weight: bold;
+}
+
+.tier-group{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+.back-btn{
+    width: 45%;
+    height: 100%;
+    background-color: rgb(210, 230, 210);
+    font-family: system-ui;
+    font-size: 2vh;
+    font-weight: bold;
+    text-align: center;
+    height: -7vh;
+    line-height: 4vh;
+}
+.imgframe{
+    width: 9vh;
+    height: 11vh;
+    
+}

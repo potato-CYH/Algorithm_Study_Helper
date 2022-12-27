@@ -2,21 +2,24 @@ import React, { useState } from 'react';
 import axios from 'axios';
 import classnames from 'classnames';
 import * as config from '../config'
+import { useNavigate } from 'react-router-dom';
 
 import "../commonCss.css"
 import "../Suggest/Suggest.css"
 
 function Suggest() {
-    const[tier, setTier] = useState(0);
-    const[tag, setTag] = useState("");
+    let navigate = useNavigate();
+    
+    const[tier, setTier] = useState(1);
+    const[tag, setTag] = useState(12);
     const[problem, setProblem] = useState([]);
     
     function TierDropDownBox(){
         const tierlist=[]
         const TierMap = config.tierMap
         
-        for(const [key, value] of TierMap){
-            tierlist.push(<option key={value} value={value}>{key}</option>)
+        for(let i = 1; i < TierMap.length; i++){
+            tierlist.push(<option key={i} value={i}>{TierMap[i]}</option>)
         }
         
         return (
@@ -47,16 +50,16 @@ function Suggest() {
         const user_id = JSON.parse(logindata).handle
         
         console.log(user_id, tier, tag)
-        axios.get(`https://cef8c164-a34d-40c0-809b-f470dc56d369.mock.pstmn.io/problems/standard/?userid=mydream11123&level=6&tag=158`, {
+        axios.get(`${config.apiurl}/problems/standard/`, {
             params: {
-                userud: user_id,
+                user_id: user_id,
                 level : tier,
                 tag : tag
             }
         })
         .then(function (response) {
             const data = response.data;
-            
+
             for(let i = 0; i < data.length;i++){
                 const dataArr=[
                     data[i].problem.id, 
@@ -92,7 +95,7 @@ function Suggest() {
                             
 
          
-                                <span className='field2'>{(config.tierMapIdent).get(dataArr[1])} </span>
+                                <span className='field2'>{(config.tierMapIdent[dataArr[1]])} </span>
                      
 
           
@@ -122,7 +125,10 @@ function Suggest() {
     }
     return (
         <div className="commonFrame">
-            <div className="title">추천 문제</div>
+          <div className = "title-frame">
+            <span className="title">추천 문제</span>
+            <div onClick={()=>navigate('/main')} className='go-mainpage'>메인페이지로</div>
+            </div>
             <div className="setting">
                 <div className="setSpace">
                     <span className="setTitle">레벨 선택 : </span>

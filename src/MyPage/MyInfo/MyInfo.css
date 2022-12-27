@@ -1,0 +1,26 @@
+.myinfo-frame{
+        /* margin-left: 5vw; */
+    /* width: 90vmax; */
+    display: flex;
+    flex-direction: column;
+    /* padding: 0px 9vw 0 9vw; */
+    /* background-color: green; */
+    align-items: center;
+}
+.myinfo-title{
+        font-family: system-ui;
+    font-weight: bold;
+    font-size: 2.5vh;
+    /* text-indent: 3vw; */
+    /* margin-bottom: 1vh; */
+    /* width: 90vw; */
+    /* text-align: left; */
+    /* float: left; */
+    margin-bottom: 1vh;
+}
+.myinfo-area{
+        /* background-color: green; */
+        width: 42vmax;
+        /*border: solid 1px lightgray;*/
+        /* margin-left: -15px; */
+}

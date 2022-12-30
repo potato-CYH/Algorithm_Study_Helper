@@ -1,6 +1,6 @@
 import React from 'react';
 
-import "../GetCommonP/GetCommonProblem.css";
+import "./GetCommonProblem.css";
 
 function GetCommonProblem() {
     

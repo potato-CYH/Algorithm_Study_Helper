@@ -1,8 +1,8 @@
-import BioBrief from '../BioBrief/BioBrief';
-import Menu from '../Menu/Menu';
-import Timer from "../Menu/Timer/Timer";
-import Suggest from '../Menu/Suggest/Suggest';
-import GetCommonP from '../Menu/GetCommonP/GetCommonProblem';
+import BioBrief from './BioBrief/BioBrief';
+import Menu from './Menu/Menu';
+import Timer from "./Timer/Timer";
+import Suggest from './Suggest/Suggest';
+import GetCommonP from './GetCommonP/GetCommonProblem';
 
 import './Main.css';
 

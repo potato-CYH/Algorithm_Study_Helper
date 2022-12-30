@@ -7,3 +7,18 @@
     /* width: auto; */
     justify-content: space-evenly;
 }
+.chart-btn{
+    width: 15vh;
+    margin: 2vh 0 2vh 0;
+    height: 5vh;
+    background-color: rgb(190, 233, 190);
+    font-family: 'system-ui';
+    font-size:3vh;
+    text-align:center;
+    font-weight:bold
+}
+.btn-frame{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

@@ -33,7 +33,7 @@ const tierMap = [
     'Ruby II',
     'Ruby I',
     'Master'
-]
+];
 
 const tierMapIdent=[
     '',
@@ -68,7 +68,7 @@ const tierMapIdent=[
     'R2',
     'R1',
     'M'
-]
+];
 
 const bojTagIdMap=new Map([
     [12,'브루트포스'],

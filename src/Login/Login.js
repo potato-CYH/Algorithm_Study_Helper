@@ -26,7 +26,7 @@ function Login() {
                 //세션 스토리지에 data json 저장
                 sessionStorage.setItem('usrInfo', JSON.stringify(data.items[0]))
                 // authorized : true
-                window.location.replace("/main")
+                window.location.replace("/Algorithm_Study_Helper/main")
             }
 
         }).catch(function (error) {

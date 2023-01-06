@@ -1,9 +1,12 @@
 import { useState } from 'react'
 import axios from 'axios'
+import {useNavigate} from 'react-router-dom'
 
 import './Login.css';
 
 function Login() {
+
+    const navigate = useNavigate();
 
     const [id, setId] = useState("");
     const [msg, setMsg] = useState("");
@@ -26,7 +29,7 @@ function Login() {
                 //세션 스토리지에 data json 저장
                 sessionStorage.setItem('usrInfo', JSON.stringify(data.items[0]))
                 // authorized : true
-                window.location.replace("/Algorithm_Study_Helper/main")
+                navigate("/main")
             }
 
         }).catch(function (error) {

@@ -3,7 +3,7 @@ import Main from './main/Main'
 import MyPage from './MyPage/MyPage';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
-import { Route, Routes } from 'react-router-dom';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 function App() {
 

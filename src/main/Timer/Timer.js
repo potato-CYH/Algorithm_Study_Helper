@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
-import * as config from '../../../config';
+import * as config from '../../config';
 import "../../commonCss.css";
 import "./Timer.css";
 

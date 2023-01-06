@@ -1,4 +1,4 @@
-const apiurl = "https://cef8c164-a34d-40c0-809b-f470dc56d369.mock.pstmn.io";
+const apiurl = "http://13.124.10.132:8080";
 
 const tierMap = [
     '',

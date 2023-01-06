@@ -3,7 +3,6 @@ import classnames from 'classnames';
 import axios from 'axios';
 import Accordion from 'react-bootstrap/Accordion';
 import * as config from '../../../config';
-
 import '../Comp1/Comp1.css';
 
 function Comp1() {
@@ -31,10 +30,10 @@ function Comp1() {
         const user_id = JSON.parse(logindata).handle;
         const cur_year = new Date().getFullYear();
 
-        axios.get(`${config.apiurl}/user/submissions/`, {
+        axios.get(`${config.apiurl}/${user_id}/solved-problem`, {
 
             params: {
-                user_id: user_id,
+                user: user_id,
                 yyyy: cur_year,
                 mm: sel_month
             }

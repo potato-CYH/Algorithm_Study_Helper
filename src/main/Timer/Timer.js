@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-import * as config from '../../config';
 import { useNavigate } from 'react-router-dom';
-
+import * as config from '../../../config';
 import "../../commonCss.css";
 import "./Timer.css";
 
@@ -18,7 +17,7 @@ function calcTime(num) {
 function convertTimeformat(obj){
     const arr=[obj.getFullYear(),obj.getMonth()+1,obj.getDate(),obj.getHours(),obj.getMinutes(),obj.getSeconds()];
     
-    return `${arr[0]}-${arr[1]}-${arr[2]}T${arr[3]}:${arr[4]}:${arr[5]}`;
+    return `${(arr[0].toString()).padStart(2,'0')}-${(arr[1].toString()).padStart(2,'0')}-${(arr[2].toString()).padStart(2,'0')}T${(arr[3].toString()).padStart(2,'0')}:${(arr[4].toString()).padStart(2,'0')}:${(arr[5].toString()).padStart(2,'0')}`;
 }
 
 function Timer() {
@@ -47,8 +46,9 @@ function Timer() {
         const logindata = sessionStorage.getItem('usrInfo');
         const userid = JSON.parse(logindata).handle;
         const problemId = pid;
-        
-        axios.post(`${config.apiurl}/${userid}/submissions/`,{
+        console.log(userid, problemId, convertTimeformat(startTime),convertTimeformat(stopTime) )
+        axios.post(`${config.apiurl}/${userid}/solved-problem`,{
+            user_id:userid,
             problem_id: problemId,
             time_start: convertTimeformat(startTime),
             time_accepted: convertTimeformat(stopTime)

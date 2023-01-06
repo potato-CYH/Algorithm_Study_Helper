@@ -1,9 +1,8 @@
 
 import { React, useState } from 'react';
-import * as config from '../../../config';
 import Chart from "react-apexcharts";
 import axios from 'axios';
-
+import * as config from '../../../config';
 function Comp3() {
     const [sortByTier, setSortByTier] = useState({});             //json으로부터 파싱한 데이터 저장({티어 번호: 문제 수,티어 번호:문제 수})
   

@@ -1,4 +1,4 @@
-const apiurl = "http://13.124.10.132:8080";
+const apiurl = "https:dev.aglioolio.xyz";
 
 const tierMap = [
     '',

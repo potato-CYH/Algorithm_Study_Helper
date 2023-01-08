@@ -1,4 +1,4 @@
-const apiurl = "https:dev.aglioolio.xyz";
+const apiurl = "https://dev.aglioolio.xyz";
 
 const tierMap = [
     '',

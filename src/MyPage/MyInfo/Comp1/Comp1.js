@@ -33,7 +33,6 @@ function Comp1() {
         axios.get(`${config.apiurl}/${user_id}/solved-problem`, {
 
             params: {
-                user: user_id,
                 yyyy: cur_year,
                 mm: sel_month
             }
